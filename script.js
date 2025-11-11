@@ -839,7 +839,11 @@ const getSortedFriends = users => [...users]
 
 
 console.log(getSortedFriends(users));
+<<<<<<< HEAD
 
+=======
+*/
+>>>>>>> main
 
 
 
@@ -915,5 +919,9 @@ const getTotalBalanceByGender = (users, gender) => users
     .filter((option) => option.gender===gender) 
     .reduce((total,number) => {return total + number.balance;}, 0);
 
+<<<<<<< HEAD
 console.log(getTotalBalanceByGender(users, "male")); */
 
+=======
+console.log(getTotalBalanceByGender(users, "male"));
+>>>>>>> main

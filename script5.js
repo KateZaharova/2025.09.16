@@ -825,4 +825,3 @@ priceEl.classList.add("product__price");
 productEl.append(nameEl, descrEl, priceEl);
 
 console.log(productEl); */
-

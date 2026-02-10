@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css"/>
+   
+</head>
+
+<body>
+    <container>
+        <h1>Time to start from the very beginning</h1>
+
+        <button class="button" data-action="open-modal"> To open the modal window</button>
+
+        <div class="backdrop js-backdrop" 
+        style="display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #7fffd4;
+    z-index: 999;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;">
+            <div class="modal" 
+            style="padding: 24px;
+        border-radius: 4px;
+        max-width: 640px;
+        width: 100%;
+        min-height: 320px;
+        background-color: #00ffff;">
+                <h2>Modal window</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, officiis. Quam nihil officiis quasi aperiam molestias quas ipsam non ad aspernatur. Doloribus ad voluptates architecto ducimus vero eius, optio quo.
+                </p>
+                <button type="button" class="button" data-action="close-modal">Close the modal window</button>
+            </div>
+        </div>
+
+    </container>
+
+    
+   
+<script src="/script5.js" type="module"></script>
+</body>
+</html>
+

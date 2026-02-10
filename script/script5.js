@@ -1,5 +1,5 @@
-'use strict'
 
+'use strict'
 /*
 // Петя біжить швидко, тому що Петя намагається зловити поїзд.
 const petya = {
@@ -825,3 +825,142 @@ priceEl.classList.add("product__price");
 productEl.append(nameEl, descrEl, priceEl);
 
 console.log(productEl); */
+
+
+/*const form = document.querySelector(".js-register-form");
+
+form.addEventListener("submit", handleSubmit);
+
+function handleSubmit(event) {
+  event.preventDefault();
+
+  const formData = new FormData(event.currentTarget);
+
+  formData.forEach((value, name) => {
+    console.log(`${name}: ${value}`);
+  });
+}; 
+
+const refs = {
+  inputName: document.querySelector(".js-name-input"),
+  inputEmail: document.querySelector(".js-email-input"),
+  message: document.querySelector(".js-message"),
+  checkbox: document.querySelector(".js-checkbox"),
+  button: document.querySelector(".js-button > span"),
+  buttonEl: document.querySelector(".js-button"),
+  paragraph: document.querySelector(".js-paragraph"),
+};
+
+//refs.inputName.addEventListener("focus", handleOnFocus);
+//refs.inputName.addEventListener("blur", handleOffFocus);
+//refs.inputEmail.addEventListener("change", onInputChange);
+
+/*window.addEventListener("keydown", onKeyPress);
+refs.inputName.addEventListener("input", onInputChange);
+refs.checkbox.addEventListener("change", onCheckboxChange);
+//refs.button.addEventListener("click", onButtonSpanClick);
+refs.buttonEl.addEventListener("click", onButtonElClick);
+refs.paragraph.addEventListener("click", onParagraphClear);
+
+function onKeyPress(event) {
+  console.log(`Key pressed: ${event.key}`);
+  console.log(`Key code: ${event.code}`);
+
+  refs.paragraph.textContent += event.key;
+};
+
+
+function onParagraphClear(event) {
+};
+
+function onInputChange(event) {
+  console.log(event.currentTarget.value);
+  refs.button.textContent = event.currentTarget.value;
+};
+
+function onCheckboxChange(event) {
+  console.log(refs.checkbox.checked);
+  refs.buttonEl.disabled = !event.currentTarget.checked;
+};
+
+function onButtonElClick(event) {
+  event.preventDefault();
+  console.log(event.currentTarget.value);
+  console.log("Button was clicked");
+
+  refs.paragraph.textContent = "";
+};
+
+
+
+function handleOnFocus(event) {
+  console.log("Input Name has focus")
+};
+
+function handleOffFocus(event) {
+  console.log("Input Name has blur")
+};
+
+const boxRef = document.querySelector(".big-box");
+console.log(boxRef);
+
+boxRef.addEventListener("mouseenter", onMouseEnter);
+boxRef.addEventListener("mouseleave", onMouseLeave);
+boxRef.addEventListener("mousemove", onMouseMove);
+
+function onMouseEnter(event) {
+  const box = event.currentTarget;
+  box.classList.add('box--active');
+
+  console.log("Mouse entered the box");
+};
+
+function onMouseLeave(event) {
+  const box = event.currentTarget;
+  box.classList.remove("box--active");
+
+  console.log("Mouse left the box");
+};
+
+function onMouseMove(event) {
+  //console.log("Mouse position: X:", event.clientX, "Y:", event.clientY);
+}; 
+
+const refs = {
+  openModalBtn: document.querySelector('[data-action="open-modal"]'),
+  closeModalBtn: document.querySelector('[data-action="close-modal"]'),
+  backdrop: document.querySelector('.js-backdrop'),
+};
+
+refs.openModalBtn.addEventListener("click", onOpenModal);
+refs.closeModalBtn.addEventListener("click", onCloseModal);
+refs.backdrop.addEventListener("click", onBackdropClick);
+
+
+function onOpenModal() {
+  document.body.classList.add('show-modal');
+  window.addEventListener("keydown", onEscKeyDown);
+};
+
+function onCloseModal() {
+  document.body.classList.remove('show-modal');
+  window.removeEventListener("keydown", onEscKeyDown);
+};
+
+function onBackdropClick(event) {
+  console.log(event.currentTarget);
+  console.log(event.target);
+
+  if (event.currentTarget === event.target) {
+    console.log("кликнули в бэкдроп");
+    onCloseModal();
+  };
+};
+
+function onEscKeyDown(event) {
+  console.log(event.code);
+  if (event.code === "Escape"){
+    onCloseModal();
+  };
+  
+}; */
